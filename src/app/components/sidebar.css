@@ -1,0 +1,25 @@
+.sidebarcompo{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+.icons{
+    font-size: 20px;
+    color: #C3CAD9;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:80px;
+    border:1px solid #C3CAD9;
+    background-color:#EDEFF2;
+    padding:10px;
+}

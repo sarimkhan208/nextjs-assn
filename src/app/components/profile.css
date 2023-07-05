@@ -1,0 +1,46 @@
+.main{
+    background-color: #EDEFF2;
+    width: 240px;
+}
+.profile-name{
+    color: #6B7A99;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+.mail{
+    color: #ADB8CC;
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.grid-box{
+    width: 110px;
+    height: 105px;
+    flex-shrink: 0;
+}
+
+.icon{
+    font-size: 40px;
+    color:#C3CAD9;
+    padding-left: 38px;
+    padding-top: 30px;
+
+}
+.icon-name{
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ADB8CC;
+    text-align: center;
+    margin-top: 20px;
+}
