@@ -1,0 +1,145 @@
+.main-container{
+    /* border:1px solid #C3CAD9; */
+    width: 100%;
+    display: flex;
+    background-color:#EDEFF2;
+}
+
+.dashboard{
+    margin: 30px;
+    border:1px solid #C3CAD9;
+    width: 90%;
+    border-radius: 20px;
+}
+.dashboard-nav{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    border-bottom: 1px solid #C3CAD9;
+}
+.tabs{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#C3CAD9;
+}
+.tabs:hover{
+    cursor: pointer;
+    color: #3361FF;
+}
+.dashboard-icons{
+    font-size: 21px;
+    
+    padding-left: 33px;
+    padding-top: 18px;
+    margin-right: 7px;
+}
+
+.dashboard-icons-name{
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.main-content{
+    margin: 15px;
+}
+.todos{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    width: 210px;
+    height: 60px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+button{
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 27px;
+}
+
+.todos-container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.title{
+    color: #ADB8CC;
+    font-size: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.desc{
+    color: #6B7A99;
+    font-size: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+.task-cont{
+    padding-left: 10px;
+    width: 220px;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 3px;
+}
+.task-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px){
+    .main-container{
+        flex-direction: column;
+    }
+    .dashboard{
+        width: 80%;
+    }
+    .dashboard-nav{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    .todos-container{
+        flex-direction: column;
+    }
+    .todos{
+        margin: auto;
+        align-items: center;
+        width: 150px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    button{
+        border-radius: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 15px;
+    }
+    .task-list{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .task-cont{
+        padding-left: 10px;
+        width: 220px;
+        background-color: white;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding-bottom: 3px;
+    }
+    
+}

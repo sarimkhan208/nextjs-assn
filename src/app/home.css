@@ -1,0 +1,15 @@
+.sidebars{
+    width: 80px;
+}
+.body{
+    display: flex;
+}
+.dash{
+    width: 120%;
+}
+
+@media (max-width:768px){
+    .sidebars{
+        display: none;
+    }
+}

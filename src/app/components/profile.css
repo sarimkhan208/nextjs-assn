@@ -20,17 +20,10 @@
     font-weight: 700;
     line-height: 30px;
 }
-
-.grid-box{
-    width: 110px;
-    height: 105px;
-    flex-shrink: 0;
-}
-
 .icon{
-    font-size: 40px;
-    color:#C3CAD9;
-    padding-left: 38px;
+    font-size: 35px;
+    
+    padding-left: 33px;
     padding-top: 30px;
 
 }
@@ -40,7 +33,107 @@
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    color: #ADB8CC;
     text-align: center;
     margin-top: 20px;
+}
+.grid-box{
+    color:#C3CAD9;
+    width: 110px;
+    height: 130px;
+    flex-shrink: 0;
+    padding: 5px;
+    border: 2px solid #ADB8CC
+}
+
+
+.grid{
+    margin: auto;
+}
+
+
+
+.grid-box:hover{
+    position: relative;
+    background-color: white;
+    border: none;
+    width: 115px;
+    transition: all;
+    height: 135px;
+    border-radius: 20px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+#top-left-box{
+    border-radius: 15px 0px 0px 0px;
+    border: 2px solid #ADB8CC
+}
+#top-left-box:hover{
+    border: none;
+    color: blue;
+    width: 115px;
+    transition: all;
+    height: 135px;
+    border-radius: 15%;
+}
+
+#top-right-box:hover{
+    border: none;
+    color: blue;
+    width: 115px;
+    transition: all;
+    height: 135px;
+    border-radius: 15%;
+}
+#bottom-left-box:hover{
+    border: none;
+    color: blue;
+    width: 115px;
+    transition: all;
+    height: 135px;
+    border-radius: 15%;
+}
+#bottom-right-box:hover{
+    border: none;
+    color: blue;
+    width: 115px;
+    transition: all;
+    height: 135px;
+    border-radius: 15%;
+}
+
+#top-right-box{
+    border-radius: 0px 15px 0px 0px;
+    border: 2px solid #ADB8CC
+}
+
+#bottom-right-box{
+    border-radius: 0px 0px 15px 0px;
+    border: 2px solid #ADB8CC
+}
+#bottom-left-box{
+    border-radius: 0px 0px 0px 15px;
+    border: 2px solid #ADB8CC
+}
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #ADB8CC;
+    width: 220px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: auto;
+    margin-top: 40px;
+}
+
+@media (max-width:768px){
+    .main{
+        width: 100%;
+    }
+    
 }

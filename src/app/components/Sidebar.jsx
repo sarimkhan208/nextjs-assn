@@ -10,7 +10,7 @@ import Image from 'next/image'
 
 const Sidebar = () => {
   return (
-    <div className='main'>
+    <div className='main' style={{borderRight:'1px solid #C3CAD9'}} >
         
         <div>
             <div className='rounded-full mt-5 sidebarcompo'>
@@ -52,16 +52,16 @@ const Sidebar = () => {
 
         <div className='mt-16'>
             <div className='bg-white h-9 w-9 rounded-full ml-3 mb-4' >
-                <Image src='/avatar1.png' width={33} height={33}  />
+                <Image src='/avatar1.png' width={33} height={33} alt='image' />
             </div>
             <div className='bg-white h-9 w-9 rounded-full ml-3 mb-4' >
-                <Image src='/avatar2.png' width={33} height={33}  />
+                <Image src='/avatar2.png' width={33} height={33} alt='image'  />
             </div>
             <div className='bg-white h-9 w-9 rounded-full ml-3 mb-4' >
-                <Image src='/avatar3.png' width={33} height={33}  />
+                <Image src='/avatar3.png' width={33} height={33} alt='image' />
             </div>
             <div className='bg-white h-9 w-9 rounded-full ml-3 mb-4' >
-                <Image src='/avatar4.png' width={33} height={33}  />
+                <Image src='/avatar4.png' width={33} height={33} alt='image' />
             </div>
 
             <div className='rounded-full mt-5 sidebarcompo'>

@@ -1,0 +1,147 @@
+#navbar{
+    height: 75px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #C3CAD9;
+    background-color:#EDEFF2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.brand{
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.hamburger{
+    background-color: white;
+    border-radius: 100%;
+    padding: 5px;
+    display: none;
+}
+.bar{
+    display: block;
+    width: 14px;
+    height: 3px;
+    background-color: #C3CAD9;
+    margin-bottom: 2px;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    color: #7D8FB3;
+}
+
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #7D8FB3;
+}
+
+.searchbar > input{
+    width: 400px;
+    height: 40px;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: white;
+}
+.clayton{
+    margin: 0 10px;
+    display: flex;
+    color: #6B7A99;
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.notification{
+    background-color: white;
+    color: #C3CAD9;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.notification>div{
+    font-size: 21px;
+}
+
+.cross > div{
+    font-size: 21px;
+}
+
+.cross{
+    background-color: white;
+    color: #C3CAD9;
+    border-radius: 100%;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contact{
+    background-color: white;
+    border-radius: 100%;
+    padding: 7px;
+    color: #C3CAD9;
+    display: none;
+}
+
+@media (max-width:768px){
+    .hamburger {
+        display: block;
+    }
+    .contact{
+        display: block;
+    }
+    .searchbar{
+        display: none;
+    }
+    .nav-menu{
+        left: -100%;
+        flex-direction: column;
+        width: 70%;
+        position: fixed;
+        height: 100%;
+        top: 75px;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+        background-color:#EDEFF2;
+        text-align: center;
+    }
+    .nav-item{
+        margin-top: 10px;
+    }
+    .nav-menu.active{
+        left: 0;
+        display: block;
+    }
+    
+}
